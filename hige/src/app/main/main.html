@@ -1,0 +1,26 @@
+<div id="myPath" ng-show="!invalid">
+  <header class="myPathHeader">
+    <div class="barsIconWrapper">
+      <div class="barsIcon">
+        <i ng-click="showMenu = !showMenu" class="fa fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="header "ng-show="showMenu">
+      <div>
+        <div class="logo">myPath</div>
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 navBarContainer">
+          <nav ng-include="view" ng-controller="NavbarCtrl" class="navBarPanel">
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid myPathViewContainer" ng-class="{full: !showMenu}">
+    <div class="no-gutter myPathRow">
+      <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 pageViewContainer">
+        <div ui-view class="pageViewContent"></div>
+      </div>
+    </div>
+  </div>
+</div>

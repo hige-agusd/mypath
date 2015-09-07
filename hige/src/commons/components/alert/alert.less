@@ -1,0 +1,15 @@
+.defaultModal{
+  background:@modalOuterBgColor;color:@modalTextColor;padding:5px;font-size:@baseFontSize;
+  .modal-header {padding:0;border-bottom: none;min-height: 1px;}
+  .modal-title{color:@highlightColor;font-size:1.2em;margin:0 0 5px 0;padding-left:3px;text-align:left;font-weight:bold;}
+  .modal-body{border:1px solid @lowContrast - #111;background:@modalInnerBgColor;}
+  p{color:@modalTextColor;text-align:center;font-size:1.1em;}
+}
+
+/* Modal Width */
+@media (min-width: 768px){
+  .modal-dialog {
+    max-width: 320px;
+    margin: 120px auto;
+  }
+}

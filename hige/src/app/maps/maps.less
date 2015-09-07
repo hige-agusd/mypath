@@ -1,0 +1,86 @@
+#maps {
+  height: 100%;
+  padding: 0px;
+  #map {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    //height: 400px;
+    height: 100%;
+    width: 100%;
+    color: black;
+    .photoPopup {
+      h5 {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      //min-height: 400px;
+      min-width: 538px;
+      img {
+        //height: 400px;
+        width: 500px;
+        padding-bottom: 10px;
+      }
+    }
+    .videoPopup {
+      h5 {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      min-height: 400px;
+      min-width: 600px;
+    }
+    .FeaturePopup {
+      h5 {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      min-height: 100px;
+      min-width: 200px;
+    }
+    .leaflet-popup-content {
+      margin-bottom: 0;
+    }
+  }
+  #types {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 150px;
+    padding:5px;
+  }
+}
+
+.formContainer { padding: 20px 20px 20px 0; }
+
+.rightToLeft #feedback {
+  .formContainer { padding: 20px 0px 20px 20px; }
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-device-width: 1200px), only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-device-width: 992px), only screen and (max-width: 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-device-width: 768px), only screen and (max-width: 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+  .formContainer { padding: 20px 0 }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-device-width: 320px), only screen and (max-width: 320px) {
+
+}

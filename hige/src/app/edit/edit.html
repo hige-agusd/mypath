@@ -1,0 +1,203 @@
+<div id="editor" ng-hide="loading" class="myPathView" ng-init="init()">
+  <br/>
+
+  <!-- <select ng-model="PlaceOrLine">
+    <option value="Places">Places</option>
+    <option value="Lines">Lines</option>
+  </select> -->
+  <label>
+    <input type="radio" ng-model="PlaceOrLine" value="Places">
+    Places
+  </label>
+  <label>
+    <input type="radio" ng-model="PlaceOrLine" value="Lines">
+    Lines
+  </label><br/>
+
+  <form ng-submit="addNode()" ng-if="PlaceOrLine == 'Places'">
+
+    <div class="container-fluid">
+      <div class="form-group">
+        <h5>Place:</h5>
+
+        <div class="ddown" ng-repeat="row in dropdowns"
+             ng-show="row.options.length > 2 || ( dropdowns[0].other && pais )">
+          <label ng-bind-html="row.column[0]"></label>
+          <select
+              ng-init="row.selected = (row.selected) ? row.selected : row.options[0]"
+              ng-change="setter(row.name, row.selected)"
+              ng-model="row.selected"
+              ng-options="v as v for v in row.options ">
+          </select>
+
+          <div ng-if="row.other">
+            <label>{{row.selected}} </label>
+            <input type="text" numbers-only="numbers-only" ng-model="otherField"
+                   ng-blur="setNewPlace(row.name, otherField)"/>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--
+          "type": "Feature",
+          "properties": {
+            "name": "Coors Field",
+            "type": "Feature",
+            "amenity": "Baseball Stadium",
+            "popupContent": "Tokyo's point"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.708435,
+              139.731353
+            ]
+          }
+    <div class="form-group">
+      <label >Type</label>
+      <input type="text" ng-model="point.type"/>
+    </div>
+-->
+
+    <div class="container-fluid">
+      <h5>Properties</h5>
+
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" ng-model="point.properties.name"/>
+      </div>
+      <div class="form-group">
+        <label>Type</label>
+        <select ng-init="" ng-model="point.properties.type">
+          <option value="{{feature}}" ng-repeat="feature in features">
+            {{feature}}
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Amenity</label>
+        <input type="text" ng-model="point.properties.amenity"/>
+      </div>
+      <div class="form-group">
+        <label>Popup Content</label>
+        <input type="text" ng-model="point.properties.popupContent"/>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <!-- <h5>Geometry</h5> -->
+      <!-- Coordinates for a single point -->
+      <div class="form-group coordinates">
+        <label>Coordinates</label>
+
+        <div>
+          <div>
+            <label>X</label><br/>
+            <input type="number" step="any"
+                   ng-model="point.geometry.coordinates[0]"/>
+          </div>
+          <div>
+            <label>Y</label><br/>
+            <input type="number" step="any"
+                   ng-model="point.geometry.coordinates[1]"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group coordinates">
+      <label></label>
+      <button ng-click="addNode" value="Add">Add Place</button>
+    </div>
+
+  </form>
+  <form ng-submit="addLine()" ng-if="PlaceOrLine == 'Lines'">
+
+    <div class="container-fluid">
+
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" ng-model="line.name"/>
+      </div>
+      <div class="form-group">
+        <label>Popup Content</label>
+        <input type="text" ng-model="line.popupContent"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Type</label>
+      <select ng-init="line.type = geometries[1]" ng-model="line.type">
+        <option value="{{geometry}}"
+                ng-repeat="geometry in geometries | filter:'!Point'">
+          {{geometry}}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <span ng-click="addCoordinates()">Coordinates +</span>
+    </div>
+    <!-- Coordinates for a Line -->
+    <div class="form-group coordinates"
+         ng-if="line.type == 'LineString'"
+         ng-repeat="coordinate in line.coordinates track by $index">
+      <!-- <label>Point {{$index}}</label> -->
+      <label>
+      <span>
+        <input type="radio" ng-model="Point" value="New" ng-init="Point = 'New'">
+        New
+      </span><br />
+      <span>
+        <input type="radio" ng-model="Point" value="Existing">
+        Existing
+      </span>
+      </label>
+
+      <div ng-if="Point == 'New'">
+        <div>
+          <label>X</label><br/>
+          <input type="number" step="any" ng-model="coordinate[0]"/>
+        </div>
+        <div>
+          <label>Y</label><br/>
+          <input type="number" step="any" ng-model="coordinate[1]"/>
+        </div>
+      </div>
+      <div ng-if="Point == 'Existing'">
+        <select ng-model="coordinate"
+            ng-change="coordinateSetter(coordinate, $index, coordinates)">
+          <option ng-repeat="point in existingPoints" value="{{point.geometry.coordinates.join('#')}}">
+            {{point.properties.name}}+{{coordinate}}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Coordinates for a Polygon -->
+    <div class="form-group coordinates"
+         ng-if="line.type == 'Polygon'"
+         ng-repeat="coordinate in line.coordinates[0] track by $index">
+      <label>Point {{$index}}</label>
+
+      <div>
+        <div>
+          <label>X</label><br/>
+          <input type="number" step="any" ng-model="coordinate[0]"/>
+        </div>
+        <div>
+          <label>Y</label><br/>
+          <input type="number" step="any" ng-model="coordinate[1]"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group coordinates">
+      <label></label>
+      <button ng-click="addLine" value="Add">Add Line</button>
+    </div>
+
+  </form>
+  <span><a ng-href="{{downloadLink}}" download="other.json">Download</a> </span>
+</div>

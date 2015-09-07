@@ -1,0 +1,104 @@
+{
+  "Places": [
+    {
+      "Japan": [
+        {
+          "Tokyo": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Coors Field",
+                "type": "Feature",
+                "amenity": "Baseball Stadium",
+                "popupContent": "Tokyo's point"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  35.708435,
+                  139.731353
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Kyoto": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Coors Field",
+                "type": "Feature",
+                "amenity": "Baseball Stadium",
+                "popupContent": "Kyoto's point 1"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  35.0137142,
+                  135.8002913
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Coors Field",
+                "type": "Feature",
+                "amenity": "Baseball Stadium",
+                "popupContent": "Kyoto's point 2"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  35.0237142,
+                  135.8002913
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "UK": [
+        {
+          "London": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Coors Field",
+                "type": "Feature",
+                "amenity": "Baseball Stadium",
+                "popupContent": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/AZLNvkex2sI\" frameborder=\"0\" allowfullscreen></iframe>"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  51.505,
+                  -0.09
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Coors Field",
+                "type": "Feature",
+                "amenity": "Baseball Stadium",
+                "popupContent": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/60w9ihXGW3g\" frameborder=\"0\" allowfullscreen></iframe>"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  51.505,
+                  -0.09
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

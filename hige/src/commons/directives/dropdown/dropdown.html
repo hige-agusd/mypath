@@ -1,0 +1,14 @@
+<div class="dropdown-container" ng-class="{ show: listVisible, isie: is_ie }">
+	<div class="dropdown-display form-control" ng-click="toggle();" ng-class="{ clicked: listVisible }">
+		<div class="dropCaret"><i></i></div>
+		<span ng-if="!isPlaceholder">{{display}}</span>
+		<span class="placeholder" ng-if="isPlaceholder">{{placeholder}}</span>
+	</div>
+	<div class="dropdown-list">
+		<div>
+			<div ng-repeat="item in list" ng-click="select(item)" ng-class="{ selected: isSelected(item) }">
+				<span>{{property !== undefined ? item[property] : item}}</span>
+			</div>
+		</div>
+	</div>
+</div>

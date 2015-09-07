@@ -1,0 +1,129 @@
+.rightToLeft{
+	direction: rtl !important;
+	button.btn,
+	button.btn-default:focus{
+		margin-right: 0px;
+	}
+	.errorPopover {
+		float: right;
+		right: 105%;
+		i{
+			border-left: 10px solid #cc0000;
+			border-right: none;
+			right: -10px;
+			left: inherit;
+		}
+	}
+	.control-label{
+		text-align: right!important;
+	}
+	@media only screen and (max-width : 992px) {
+	  .errorPopover {
+	    .posRel;
+	    .dispBk;
+	    color: @white;
+	    background: @hasError;
+	    border-radius: 3px;
+	    line-height: 24px;
+	    top: 12px;
+	    right: 0;
+	    left: 0;
+	    float: none;
+	    margin-bottom: 15px;
+	    text-align: center;
+	    > span {
+	      padding: 0 5%;
+	      .dispBk;
+	    }
+	    i {
+	      border-top: none;
+	      border-bottom: 10px solid @hasError;
+	      border-right: 7px solid transparent;
+	      border-left: 7px solid transparent;
+	      .dispBk;
+	      .posAbs;
+	      top: -10px;
+	      left: 0;
+	      right: 0;
+	      margin: 0 auto;
+	      width: 10px;
+	      height: 7px;
+	    }
+	  }
+	}
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+	  .errorPopover {
+	    .posRel;
+	    .dispBk;
+	    color: @white;
+	    background: @hasError;
+	    border-radius: 3px;
+	    line-height: 24px;
+	    top: 12px;
+	    right: 0;
+	    left: 0;
+	    float: none;
+	    margin-bottom: 15px;
+	    text-align: center;
+	    > span {
+	      padding: 0 5%;
+	      .dispBk;
+	    }
+	    i {
+	      border-top: none;
+	      border-bottom: 10px solid @hasError;
+	      border-right: 7px solid transparent;
+	      border-left: 7px solid transparent;
+	      .dispBk;
+	      .posAbs;
+	      top: -10px;
+	      left: 0;
+	      right: 0;
+	      margin: 0 auto;
+	      width: 10px;
+	      height: 7px;
+	    }
+	  }
+	}
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px) {
+	  .errorPopover {
+	    .posRel;
+	    .dispBk;
+	    color: @white;
+	    background: @hasError;
+	    border-radius: 3px;
+	    line-height: 24px;
+	    top: 12px;
+	    right: 0;
+	    left: 0;
+	    float: none;
+	    margin-bottom: 15px;
+	    text-align: center;
+	    > span {
+	      padding: 0 5%;
+	      .dispBk;
+	    }
+	    i {
+	      border-top: none;
+	      border-bottom: 10px solid @hasError;
+	      border-right: 7px solid transparent;
+	      border-left: 7px solid transparent;
+	      .dispBk;
+	      .posAbs;
+	      top: -10px;
+	      left: 0;
+	      right: 0;
+	      margin: 0 auto;
+	      width: 10px;
+	      height: 7px;
+	    }
+	  }
+	}
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 320px) {
+
+	}
+
+}

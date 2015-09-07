@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" ng-app="myPath">
+  <head>
+    <meta charset="utf-8">
+    <title>myPath</title>
+    <script charset="utf-8">
+      if (location.protocol.indexOf('https') == -1)
+        location.href = location.href.replace('http', 'https');
+    </script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/Leaflet/Leaflet.markercluster/master/dist/MarkerCluster.css">
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script> -->
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <link rel="stylesheet" href="app/vendor.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="../bower_components/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="../bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/index_light.css -->
+    <link rel="stylesheet" href="app/index_light.css">
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/index_dark.css -->
+    <link rel="stylesheet" href="app/index_dark.css">
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/rtl.css -->
+    <link rel="stylesheet" href="app/rtl.css">
+    <!-- endbuild -->
+
+    <!--[if lte IE 9]>
+    <script src="//cdn.rawgit.com/jpillora/xdomain/0.6.17/dist/xdomain.min.js"></link>
+    <script charset="utf-8">
+      xdomain.debug = true;
+    </script>
+    <![endif]-->
+  </head>
+  <body theme culture class="noMenu">
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script charset="utf-8">
+      var is_ie = true;
+    </script>
+    <![endif]-->
+    <div ui-view class="mainContainer"></div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/browser-detection/browser-detection.js"></script>
+    <script src="../bower_components/browserdetection/src/browser-detection.js"></script>
+    <script src="../bower_components/FlashDetect/FlashDetect.js"></script>
+    <script src="../bower_components/angular-ui-utils/ui-utils.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/momentjs/moment.js"></script>
+    <script src="../bower_components/respond/dest/respond.src.js"></script>
+    <script src="../bower_components/angular-soap/soapclient.js"></script>
+    <script src="../bower_components/angular-soap/angular.soap.js"></script>
+    <script src="../bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+    <script src="../bower_components/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <script src="app/index.js"></script>
+    <script src="commons/services/utils/utils.factory.js"></script>
+    <script src="commons/services/user/user.service.js"></script>
+    <script src="commons/services/ui/ui.service.js"></script>
+    <script src="commons/services/geoJson/geoJson.service.js"></script>
+    <script src="commons/services/featureType/featureType.service.js"></script>
+    <script src="commons/services/config/config.service.js"></script>
+    <script src="commons/services/call2api/call2api.service.js"></script>
+    <script src="commons/directives/touchSref/touchSref.directive.js"></script>
+    <script src="commons/directives/theme/theme.directive.js"></script>
+    <script src="commons/directives/polyfills/inputDisabledPolyfill.js"></script>
+    <script src="commons/directives/menuDetector/menuDetector.directive.js"></script>
+    <script src="commons/directives/map/map.directive.js"></script>
+    <script src="commons/directives/dropdown/dropdown.directive.js"></script>
+    <script src="commons/components/alert/alert.controller.js"></script>
+    <script src="components/navbar/navbar.controller.js"></script>
+    <script src="app/maps/maps.controller.js"></script>
+    <script src="app/main/main.controller.js"></script>
+    <script src="app/edit/edit.controller.js"></script>
+    <script src="commons/env.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

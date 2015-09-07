@@ -1,0 +1,42 @@
+/* Positioning */
+
+@pos:position;
+  @rel:relative;
+  @abs:absolute;
+
+  .posRel{@{pos}:@rel;}
+  .posAbs{@{pos}:@abs;}
+
+/* End of Positioning */
+/////////////////////////////////////////
+/* Display */
+@disp:display;
+  @Bk:block;
+  @inlineBk:inline-block;
+
+  .dispBk{@{disp}:@Bk;}
+  .dispInlineBk{@{disp}:@inlineBk;}
+
+  /* gradient */
+.gradient (@start: #ffffff, @stop: #000000) {
+    background: @start;
+    background: -moz-linear-gradient(top, @start 0%, @stop 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@stop));
+    background: -webkit-linear-gradient(top, @start 0%,@stop 100%);
+    background: -o-linear-gradient(top, @start 0%,@stop 100%);
+    background: -ms-linear-gradient(top, @start 0%,@stop 100%);
+    background: linear-gradient(to bottom, @start 0%,@stop 100%);
+}
+
+.border-radius(@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+   -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+   -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+   border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.fullHeight{height:100%;}

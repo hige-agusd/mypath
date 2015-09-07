@@ -1,0 +1,162 @@
+@height: 22px;
+@spacing: 10px;
+@placeholder-colour: @dropdownPlaceholder;
+@select-colour: @highlightColor;
+@font-size: 14px;
+@border-colour: #DDD;
+
+.vertical-centre (@height) {
+	height: @height;
+	line-height: @height !important;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#feedback-dropdown {
+	float: none;
+	height: 22px;
+	display: block;
+	width: 100%;
+	background: @dropdownBgColor;
+	position: relative;z-index: 1;
+	margin-top: 5px;
+
+	.dropCaret{display: block;position: absolute;right: 0;top: 0;width: 20px;height: 22px;border-left: 1px solid @midContrast;}
+	.dropCaret i{border-right: 3px solid transparent;border-left: 3px solid transparent;border-top: 5px solid @placeholder-colour;display: block;position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;width: 3px;height: 5px;}
+
+	.dropdown-display.form-control{background: @dropdownBgColor;}
+
+	>div {
+		float: left;
+		width: 100%;
+
+		>div.dropdown-display {
+			float: left;
+			width: 100%;
+			height: @height;
+			cursor: pointer;
+			box-sizing: border-box;
+
+			@icon-width: 14px;
+			>* {
+				float: left;
+				height: 100%;
+				.vertical-centre(@height);
+			}
+
+			>span {
+				font-size: 1em;
+				width: 100%;
+				position: absolute;
+				box-sizing: border-box;
+				padding-right: @icon-width+@spacing*2;
+				top: 0;
+				font-weight: bold;
+				color: @placeholder-colour;
+
+				&.placeholder {
+					color: @placeholder-colour;
+					overflow: hidden;
+				}
+
+				&:hover{color: @dropdownColorHover;}
+			}
+
+			>i {
+				position: relative;
+				width: @icon-width;
+				margin-left: (@spacing+@icon-width)*-1;
+				font-size: 1.125em;
+				font-weight: bold;
+				padding-right: @spacing;
+				text-align: right;
+			}
+		}
+
+		>div.dropdown-list {
+			float: left;
+			width: 100%;
+			position: relative;
+			width: 100%;
+			transform: scale(1, 0);
+			transition: transform ease 250ms;
+
+			>div {
+				position: absolute;
+				width: 100%;
+				z-index: 2;
+				cursor: pointer;
+				background: @dropdownBgColor;
+
+				>div {
+					float: left;
+					width: 100%;
+					padding: 0 @spacing;
+					font-size: 1em;
+					font-weight: bold;
+					color: @dropdownPlaceholder;
+					box-sizing: border-box;
+					border: 1px solid @lowContrast; border-top: none;
+
+					@icon-width: 20px;
+
+					&:hover {
+						background: @mainColor;
+						color: @dropdownColorHover;
+					}
+
+					&.selected {
+						background: @select-colour;
+						color: @dropdownBgColor;
+					}
+
+					>* {
+						.vertical-centre(@height);
+					}
+
+					>span {
+						float: left;
+						width: 100%;
+						position: relative;
+						padding-right: @icon-width+@spacing;
+						box-sizing: border-box;
+						color: inherit;
+					}
+
+					>i {
+						float: left;
+						width: @icon-width;
+						margin-left: @icon-width*-1;
+						display: none;
+					}
+
+					&.selected>i {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+	>div.show>div.dropdown-list {
+		transform: scale(1, 1);
+	}
+}
+.isie {
+	.dropdown-list{
+	    display: none;
+	}
+
+    &.show {
+      .dropdown-list {
+	display: block;
+      }
+    }
+}
+
+#feedback-dropdown:hover{
+	.dropCaret i{border-right: 3px solid transparent;border-left: 3px solid transparent;border-top: 5px solid @dropdownCaretHover;display: block;position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;width: 3px;height: 5px;}
+	.placeholder {
+		color: @dropdownCaretHover!important;
+	}
+}

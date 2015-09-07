@@ -1,0 +1,83 @@
+#editor {
+  height: 100%;
+  padding: 0px;
+  color: black;
+  div.ddown {
+    margin-bottom: 5px;
+    display: block;
+    &.hideit {
+      display: none;
+    }
+  }
+  label {
+    width: 10%;
+  }
+  select{
+    font: normal normal normal 13.3333330154419px/normal Arial;
+    color: black;
+    //width: 80px;
+    width: 30%;
+  }
+  button {
+    color: black;
+  }
+  input{
+    font: normal normal normal 13.3333330154419px/normal Arial;
+    color: black;
+    //width: 80px;
+    width: 30%;
+  }
+  #ciudades {
+    display: none;
+    &.showit {
+      display: block;
+    }
+  }
+  #paises {
+    display: none;
+    &.showit {
+      display: block;
+    }
+  }
+  .coordinates {
+    div {
+      display: inline-block;
+      input{
+        width: 85%;
+      }
+    }
+  }
+}
+
+.formContainer{padding:20px 20px 20px 0;}
+
+.rightToLeft #feedback{
+  .formContainer{padding:20px 0px 20px 20px;}
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-device-width:1200px), only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-device-width:992px), only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-device-width:768px), only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-device-width:480px), only screen and (max-width : 480px) {
+  .formContainer{padding:20px 0}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-device-width:320px), only screen and (max-width : 320px) {
+
+}
