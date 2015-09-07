@@ -332,6 +332,41 @@ body {
   }
 }
 /* Custom, iPhone Retina */
+.defaultModal {
+  background: #d1f0f9;
+  color: #333333;
+  padding: 5px;
+  font-size: 11px;
+}
+.defaultModal .modal-header {
+  padding: 0;
+  border-bottom: none;
+  min-height: 1px;
+}
+.defaultModal .modal-title {
+  color: #005581;
+  font-size: 1.2em;
+  margin: 0 0 5px 0;
+  padding-left: 3px;
+  text-align: left;
+  font-weight: bold;
+}
+.defaultModal .modal-body {
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+}
+.defaultModal p {
+  color: #333333;
+  text-align: center;
+  font-size: 1.1em;
+}
+/* Modal Width */
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 320px;
+    margin: 120px auto;
+  }
+}
 #feedback-dropdown {
   float: none;
   height: 22px;
@@ -633,41 +668,6 @@ button[disabled].disabledPolyfill {
 button[disabled].disabledPolyfill:hover {
   outline: none!important;
   border: 1px solid #777777 !important;
-}
-.defaultModal {
-  background: #d1f0f9;
-  color: #333333;
-  padding: 5px;
-  font-size: 11px;
-}
-.defaultModal .modal-header {
-  padding: 0;
-  border-bottom: none;
-  min-height: 1px;
-}
-.defaultModal .modal-title {
-  color: #005581;
-  font-size: 1.2em;
-  margin: 0 0 5px 0;
-  padding-left: 3px;
-  text-align: left;
-  font-weight: bold;
-}
-.defaultModal .modal-body {
-  border: 1px solid #aaaaaa;
-  background: #ffffff;
-}
-.defaultModal p {
-  color: #333333;
-  text-align: center;
-  font-size: 1.1em;
-}
-/* Modal Width */
-@media (min-width: 768px) {
-  .modal-dialog {
-    max-width: 320px;
-    margin: 120px auto;
-  }
 }
 form {
   border-bottom: 1px solid #bbbbbb;

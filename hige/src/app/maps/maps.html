@@ -2,7 +2,7 @@
   <div id="map" my-map></div>
   <form id='types'>
     <div ng-repeat="feature in features track by $index">
-      <input type='checkbox' ng-model="typeFilter[feature]" name='filters' ng-click='drawMarkers();' value='feature' checked> {{feature}}
+      <input type='checkbox' ng-model="typeFilter[feature]" name='filters' ng-click='showStations();' value='feature' checked> {{feature}}
     </div>
   </form>
 </div>

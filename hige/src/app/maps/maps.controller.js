@@ -56,14 +56,36 @@ angular.module('myPath')
       geoJsonSrv.getMarkers().success(function(data) {
         window.otherTags = data;
         $scope.otherTags = data;
-        $scope.overlays = L.layerGroup().addTo(map);
         $scope.map = map;
         $scope.drawMarkers();
 
       });
     }
 
+    $scope.showStations = function() {
+      // first collect all of the checked boxes and create an array of strings
+      // // like ['green', 'blue'] then remove any previously-displayed marker
+      // groups
+      var list = [];
+      angular.forEach($scope.typeFilter, function(value, key){
+        if(value) {
+          list.push(key);
+        }
+      });
+      console.log(list)
+      //overlays.clearLayers();
+      //// create a new marker group
+      //var clusterGroup = new L.MarkerClusterGroup().addTo(overlays);
+      //// and add any markers that fit the filtered criteria to that group.
+      //layers.eachLayer(function(layer) {
+      //  if (list.indexOf(layer.feature.properties.line) !== -1) {
+      //    clusterGroup.addLayer(layer);
+      //  }
+      //});
+    };
+    //var overlays = L.layerGroup().addTo(map);
     $scope.drawMarkers = function() {
+
       var map = $scope.map;
       var list = [];
       angular.forEach($scope.typeFilter, function(value, key){
@@ -71,45 +93,43 @@ angular.module('myPath')
           list.push(key);
         }
       });
-      $scope.overlays.clearLayers();
-      var markers = new L.MarkerClusterGroup().addTo($scope.overlays);
-      //var markers = L.markerClusterGroup();
+      //for(var i = 0; i < $scope.typeFilter.length; i++) {
+      //  if ($scope.typeFilter[i]) {
+      //    list.push($scope.typeFilter[i].value);
+      //  }
+      //}
+      var markers = L.markerClusterGroup();
       var geoJsonData = getDataAsGeoJson();
-      angular.forEach(geoJsonData, function(layer) {
-        console.log(layer)
-        if (list.indexOf(layer.properties.type) !== -1) {
-          markers.addLayer(layer);
+      markers.clearLayers();
+      console.log(list)
+      geoJson = L.geoJson(geoJsonData, {
+        onEachFeature: function(feature) {
+          //console.log(feature);
+          //if (feature.properties.type == 'hanami') {
+          if (list.indexOf(feature.properties.type) !== -1) {
+            var icon = feature.properties.type;
+            var marker = L.marker(feature.geometry.coordinates, {
+              icon: TypesSrv.featureTypes[icon].marker
+            }).bindPopup(getPopupContent(feature)).addTo(markers);
+          }
+          //} //var marker = L.marker(feature.geometry.coordinates, {
+          //  icon: TypesSrv.featureTypes[icon].marker
+          //}).bindPopup(getPopupContent(feature)).addTo(map);
+          //.on('click', function(e) {
+          //  $state.go('post', {
+          //    id: feature.properties.id
+          //  })
+          //});
+          /*if (feature.properties.href || false) {
+           var popup = L.popup({
+           maxWidth: 500,
+           minWidth: 350
+           }).setContent('<div fbml class="fb-post" data-href="' + feature.properties.href + '" data-width="300"></div>');
+           marker.bindPopup(popup);
+           };*/
         }
       });
-      //geoJson = L.geoJson(geoJsonData, {
-      //  onEachFeature: function(feature) {
-      //    //console.log(feature);
-      //    //if (feature.properties.type == 'hanami') {
-      //    if (list.indexOf(feature.properties.type) !== -1) {
-      //      //var icon = feature.properties.type;
-      //      //var marker = L.marker(feature.geometry.coordinates, {
-      //        //icon: TypesSrv.featureTypes[icon].marker
-      //      //}).bindPopup(getPopupContent(feature)).addTo(markers);
-      //      markers.addLayer(feature);
-      //    }
-      //    //} //var marker = L.marker(feature.geometry.coordinates, {
-      //    //  icon: TypesSrv.featureTypes[icon].marker
-      //    //}).bindPopup(getPopupContent(feature)).addTo(map);
-      //    //.on('click', function(e) {
-      //    //  $state.go('post', {
-      //    //    id: feature.properties.id
-      //    //  })
-      //    //});
-      //    /*if (feature.properties.href || false) {
-      //     var popup = L.popup({
-      //     maxWidth: 500,
-      //     minWidth: 350
-      //     }).setContent('<div fbml class="fb-post" data-href="' + feature.properties.href + '" data-width="300"></div>');
-      //     marker.bindPopup(popup);
-      //     };*/
-      //  }
-      //});
-      //map.addLayer(markers);
+      map.addLayer(markers);
       $scope.map.fitBounds(markers.getBounds());
       map.on('click', function(e) {
         var marker = e.marker;
