@@ -56,6 +56,7 @@ angular.module('myPath')
       geoJsonSrv.getMarkers().success(function(data) {
         window.otherTags = data;
         $scope.otherTags = data;
+        $scope.overlays = L.layerGroup().addTo(map);
         $scope.map = map;
         $scope.drawMarkers();
 
@@ -93,19 +94,11 @@ angular.module('myPath')
           list.push(key);
         }
       });
-      //for(var i = 0; i < $scope.typeFilter.length; i++) {
-      //  if ($scope.typeFilter[i]) {
-      //    list.push($scope.typeFilter[i].value);
-      //  }
-      //}
-      var markers = L.markerClusterGroup();
+      $scope.overlays.clearLayers();
+      var markers = L.markerClusterGroup().addTo($scope.overlays);
       var geoJsonData = getDataAsGeoJson();
-      markers.clearLayers();
-      console.log(list)
       geoJson = L.geoJson(geoJsonData, {
         onEachFeature: function(feature) {
-          //console.log(feature);
-          //if (feature.properties.type == 'hanami') {
           if (list.indexOf(feature.properties.type) !== -1) {
             var icon = feature.properties.type;
             var marker = L.marker(feature.geometry.coordinates, {
@@ -129,6 +122,7 @@ angular.module('myPath')
            };*/
         }
       });
+      console.log(markers)
       map.addLayer(markers);
       $scope.map.fitBounds(markers.getBounds());
       map.on('click', function(e) {
