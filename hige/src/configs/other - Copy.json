@@ -394,7 +394,7 @@
           "type": "Feature",
           "properties": {
             "name": "koko-en",
-            "type": "hanami",
+            "type": "wish",
             "amenity": "Jardin",
             "popupContent": "https://en.wikipedia.org/wiki/Koko-en_Garden"
           },
@@ -908,82 +908,6 @@
             ]
           },
           "id": "japannagatoro000"
-        }
-      ],
-      "Chichibu": [
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Hitsujiyama koen",
-            "type": "hanami",
-            "amenity": "Parque",
-            "popupContent": "http://chichibu.web.transer.com/bb_url_ej.php?ctw_=sT,eCR-JE,bF,hT,uaHR0cDovL25hdmkuY2l0eS5jaGljaGlidS5sZy5qcC9wX2Zsb3dlci8xODY2Lw==,f20150911074307-0,cdXRmLTg=,"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              35.9861814,
-              139.0886863
-            ]
-          },
-          "id": "japanchichibu000"
-        }
-      ],
-      "takumachohako": [
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Shiudeyama",
-            "type": "hanami",
-            "amenity": "Monte",
-            "popupContent": "http://japan-magazine.jnto.go.jp/1403_sakuraphoto.html#"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              34.245865,
-              133.595294
-            ]
-          },
-          "id": "japantakumachohako000"
-        }
-      ],
-      "Tsu": [
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Mitake Sakura",
-            "type": "hanami",
-            "amenity": "Terraza de arroz",
-            "popupContent": "http://japan-magazine.jnto.go.jp/1403_sakuraphoto.html#"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              34.52088,
-              136.220138
-            ]
-          },
-          "id": "japantsu000"
-        }
-      ],
-      "Hakodate": [
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Goryoukaku",
-            "type": "hanami",
-            "amenity": "Castillo",
-            "popupContent": "http://www.goryokaku-tower.co.jp/html/index/en.html"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              41.796944,
-              140.756944
-            ]
-          },
-          "id": "japanhakodate000"
         }
       ]
     },

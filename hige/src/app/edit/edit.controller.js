@@ -117,7 +117,7 @@ angular.module('myPath')
       if (forced || !$scope.dropdowns[0] || (!$scope.pais && !$scope.dropdowns[0].other)) {
         $scope.dropdowns[0] = {
           "name": "paises",
-          "column": ['País', 0/*selectedMarginFactor.toString()*/],
+          "column": ['PaÃ­s', 0/*selectedMarginFactor.toString()*/],
           "options": arrayPaises,
           "selected": selectedPais,
           //"link": TranslateSrv._("colorEditor_restoreConfirmTitle"),

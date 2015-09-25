@@ -31,6 +31,21 @@
       };
 
 
+      self.getItinerary = function() {
+        return $http.get('./configs/itinerary.json').success(function(markers) {
+          self.map = markers;
+          ready = true;
+          _.each(pending, function(func) {
+            func();
+          });
+        }).error(function() {
+          throw {
+            error: 'Could not load geo.json'
+          };
+        });
+      };
+
+
       /**
        * @name _
        * @description The translation function

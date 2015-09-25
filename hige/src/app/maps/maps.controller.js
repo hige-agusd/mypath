@@ -15,7 +15,7 @@ angular.module('myPath')
 
     var layers = {
       'Pirate': L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery Â© <a href="http://mapbox.com">Mapbox</a>',
         maxZoom: 18,
         id: 'hige.9ded2269',
         accessToken: 'pk.eyJ1IjoiaGlnZSIsImEiOiIwN2JiODA3YjA3OTdiNjQ4M2Y2YWNmNmY3MTQwYjJmNiJ9.e4oANPHLcagfY2iJY65QWg'
@@ -203,7 +203,7 @@ angular.module('myPath')
      }
      clickMarker = L.marker(ev.latlng).addTo($scope.map);
 
-     var link = $('<button class="md-raised md-primary md-button md-default-theme" tabindex="0">¡Propone un destino!</button>').click(function() {
+     var link = $('<button class="md-raised md-primary md-button md-default-theme" tabindex="0">Â¡Propone un destino!</button>').click(function() {
      $state.go('subite', {
      lat: ev.latlng.lat,
      lng: ev.latlng.lng

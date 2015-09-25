@@ -8,7 +8,8 @@ angular.module('myPath', [
   'ui.router',
   //'$compileProvider',
   'ui.bootstrap',
-  'angularSoap'])
+  'angularSoap',
+  'dndLists'])
   .config(function ($stateProvider, $urlRouterProvider, $compileProvider) {
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|data):/);
 
@@ -75,6 +76,17 @@ angular.module('myPath', [
         url: 'edit',
         templateUrl: 'app/edit/edit.html',
         controller: 'EditCtrl'
+      })
+      .state('menu_itinerary', {
+        url: 'menu/itinerary',
+        parent: 'menu',
+        templateUrl: 'app/itinerary/itinerary.html',
+        controller: 'ItineraryCtrl'
+      })
+      .state('itinerary', {
+        url: 'itinerary',
+        templateUrl: 'app/itinerary/itinerary.html',
+        controller: 'ItineraryCtrl'
       })
       .state('view_maps', {
         url: '/maps',
