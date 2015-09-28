@@ -1,5 +1,11 @@
 #itinerary {
+  color: #000;
   padding-left: 125px;
+  .itinerary-container {
+    margin-left: 10%;
+    padding-top: 10px;
+    width: 65%;
+  }
   ul[dnd-list], ul[dnd-list] > li {
     position: relative;
   }
@@ -14,6 +20,15 @@
   }
 
   /***************************** Dropzone Styling *****************************/
+  .dropzone.box {
+    margin-left: 25px;
+    background-color: #666;
+    h3 {
+      margin-left: 5%;
+      padding-top: 1%;
+      color: #fff;
+    }
+  }
   /**
    * The dnd-list should always have a min-height,
    * otherwise you can't drop to it once it's empty
@@ -21,7 +36,6 @@
   .dropzone ul[dnd-list] {
     min-height: 42px;
     margin: 0px;
-    magin-left: 15px;
     padding-left: 0px;
   }
 
@@ -89,16 +103,26 @@
   /***************************** Element type specific styles *****************************/
 
   .dropzone .item {
+    color: #000;
     padding: 10px 15px;
   }
 
   .dropzone .container-element {
+    color: #000;
+    background: #999;
     margin: 10px;
+    h3 {
+      color: #fa6d05;
+      margin-left: 5%;
+      padding-top: 1%;
+    }
   }
 
   .dropzone .container-element .column {
-    float: left;
-    width: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 96%;
   }
 
   /***************************** Toolbox *****************************/

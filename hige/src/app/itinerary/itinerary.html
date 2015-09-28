@@ -17,7 +17,7 @@
        the above list template to render each container column -->
   <script type="text/ng-template" id="container.html">
     <div class="container-element box box-blue">
-      <h3>Container {{item.id}}</h3>
+      <h3>{{item.id}}</h3>
       <div class="column" ng-repeat="list in item.columns" ng-include="'list.html'"></div>
       <div class="clearfix"></div>
     </div>
@@ -25,16 +25,16 @@
 
   <!-- Template for a normal list item -->
   <script type="text/ng-template" id="item.html">
-    <div class="item">Item {{item.name}}</div>
+    <div class="item">{{item.name}}</div>
   </script>
 
   <!-- Main area with dropzones and source code -->
   <div class="col-md-10">
     <div class="row">
-      <div ng-repeat="(zone, list) in models.dropzones" class="col-md-6">
+      <div ng-repeat="(zone, list) in models.dropzones" class="itinerary-container">
         <div class="dropzone box box-yellow">
           <!-- The dropzone also uses the list template -->
-          <h3>Dropzone {{zone}}</h3>
+          <h3>{{zone}}</h3>
           <div ng-include="'list.html'"></div>
         </div>
       </div>
@@ -44,6 +44,45 @@
 
     <h2>Generated Model</h2>
     <pre>{{modelAsJson}}</pre>
+  </div>
+  <!-- Sidebar -->
+  <div class="col-md-2">
+
+    <div class="toolbox box box-grey box-padding">
+      <h3>New Elements</h3>
+      <ul>
+        <!-- The toolbox only allows to copy objects, not move it. After a new
+             element was created, dnd-copied is invoked and we generate the next id -->
+        <li dnd-draggable="item"
+            dnd-effect-allowed="copy"
+            dnd-copied="item.id = item.id + 1"
+            >
+          <div >
+            <select ng-model="newContainer"
+                    ng-change="updateItemDropdown()">
+              <option ng-repeat="city in newContainerDropdown" value="{{city.id}}">
+                {{city.id}}
+              </option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-default btn-lg" disabled="disabled">{{item.type}} {{newContainer.id}}</button>
+        </li>
+        <li dnd-draggable="item"
+            dnd-effect-allowed="copy"
+            dnd-copied="item.id = item.id + 1"
+            >
+          <div >
+            <select ng-model="newItem"
+                    ng-change="frula()">
+              <option ng-repeat="place in newItemDropdown" value="{{place.id}}">
+                {{place.name}}
+              </option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-default btn-lg" disabled="disabled">{{item.type}} {{newContainer.id}}</button>
+        </li>
+      </ul>
+    </div>
   </div>
   <span><a ng-href="{{downloadLink}}" download="other.json">Download</a> </span>
 </div>
