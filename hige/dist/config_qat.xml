@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><flexITP>
+    <flexCharts>
+        <flexChartsURL>https://trade.loginandtrade.com/tp/charts</flexChartsURL>
+        <ratesUrl>pushqat.cityindextest9.co.uk</ratesUrl>
+        <ratesUrlControlPort>443</ratesUrlControlPort>
+        <ratesUrlPort>443</ratesUrlPort>
+        <historicUrl>https://ciapiqat.cityindextest9.co.uk/tradingapi/</historicUrl>
+        <marketSearchUrl>https://ciapiqat.cityindextest9.co.uk/tradingapi/</marketSearchUrl>
+    </flexCharts>
+    <tradingApiURL>https://ciapiqat.cityindextest9.co.uk/tradingapi/</tradingApiURL>
+    <vsClientProxy>https://ciapiqat.cityindextest9.co.uk/ClientDocumentsProxy/ClientProxy</vsClientProxy>
+    <viewStWebApp>http://pkh-qat-app01:8002/flashASP/host/progs/ViewStatement/ViewStatement</viewStWebApp>
+    <onlineFundinghtm>OnlineFundingView/transferfunds</onlineFundinghtm>
+    <onlineFundingWebApp>http://pkh-qat-app01:8002/onlineFundingPCI/onlineFundingMain.aspx</onlineFundingWebApp>
+    <lsc>
+        <serverURL>pushqat.cityindextest9.co.uk</serverURL>
+        <controlPort>443</controlPort>
+        <port>443</port>
+    </lsc>
+</flexITP>

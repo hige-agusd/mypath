@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><flexITP>
+    <flexCharts>
+        <flexChartsURL>https://trade.loginandtrade.com/tp/charts</flexChartsURL>
+        <ratesUrl>pushpreprod.cityindextest9.co.uk</ratesUrl>
+        <ratesUrlControlPort>443</ratesUrlControlPort>
+        <ratesUrlPort>443</ratesUrlPort>
+        <historicUrl>https://ciapipreprod.cityindextest9.co.uk/tradingapi/</historicUrl>
+        <marketSearchUrl>https://ciapipreprod.cityindextest9.co.uk/tradingapi/</marketSearchUrl>
+    </flexCharts>
+    <tradingApiURL>https://ciapipreprod.cityindextest9.co.uk/tradingapi/</tradingApiURL>
+    <vsClientProxy>https://ciapipreprod.cityindextest9.co.uk/ClientDocumentsProxy/ClientProxy</vsClientProxy>
+    <viewStWebApp>http://pkh-ppe-web01/flashASP/host/progs/ViewStatement/ViewStatement</viewStWebApp>
+    <onlineFundinghtm>OnlineFundingView/transferfunds</onlineFundinghtm>
+    <onlineFundingWebApp>https://qappitp.cityindex.co.uk/onlineFundingPCI</onlineFundingWebApp>
+    <lsc>
+        <serverURL>pushpreprod.cityindextest9.co.uk</serverURL>
+        <controlPort>443</controlPort>
+        <port>443</port>
+    </lsc>
+</flexITP>

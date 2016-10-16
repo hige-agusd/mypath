@@ -1,0 +1,114 @@
+{
+  "Places": {
+    "Japan": {
+      "Tokyo": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Coors Field",
+            "type": "Feature",
+            "amenity": "Baseball Stadium",
+            "popupContent": "Tokyo's point"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.708435,
+              139.731353
+            ]
+          }
+        }
+      ],
+      "Kyoto": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Coors Field",
+            "type": "Feature",
+            "amenity": "Baseball Stadium",
+            "popupContent": "Kyoto's point 1"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.0137142,
+              135.8002913
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Coors Field",
+            "type": "Feature",
+            "amenity": "Baseball Stadium",
+            "popupContent": "Kyoto's point 2"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.0237142,
+              135.8002913
+            ]
+          }
+        }
+      ]
+    },
+    "UK": {
+      "London": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Coors Field",
+            "type": "video",
+            "amenity": "Baseball Stadium",
+            "popupContent": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/AZLNvkex2sI\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              51.505,
+              -0.09
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Coors Field",
+            "type": "video",
+            "amenity": "Baseball Stadium",
+            "popupContent": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/60w9ihXGW3g\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              51.505,
+              -0.09
+            ]
+          }
+        }
+      ]
+    },
+    "Argentina": {
+      "Miramar": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Surfcamp",
+            "type": "photo",
+            "amenity": "Playa",
+            "popupContent": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10985326_10206651794916134_5464897661788252729_n.jpg?oh=1d5b1fc92549cc11dfd921ee86ea13c8&oe=56421CF6&__gda__=1444216969_701a76e0c824d2265afab257e16f8bd8"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -38.245859,
+              -57.777762
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

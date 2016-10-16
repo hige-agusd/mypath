@@ -1,0 +1,96 @@
+{
+  "Itinerary": {
+    "Japan": [
+      {
+        "type": "container",
+        "id": "Tokyo",
+        "columns": [[
+          {
+            "id": "japantokyo000",
+            "type": "item",
+            "name": "EDO-TOKYO OPEN AIR ARCHITECTURAL MUSEUM",
+            "blah": "wish",
+            "amenity": "Museo",
+            "popupContent": "",
+            "geometry": {
+              "coordinates": [
+                35.7122107,
+                139.509618
+              ]
+            }
+          },
+          {
+            "id": "japantokyo001",
+            "type": "item",
+            "name": "Hard Rock Cafe",
+            "blah": "wish",
+            "amenity": "Cafe",
+            "popupContent": "",
+            "geometry": {
+              "coordinates": [
+                35.7103487,
+                139.7747607
+              ]
+            }
+          },
+          {
+            "id": "japantokyo002",
+            "type": "item",
+            "name": "Narita (NRT)",
+            "blah": "wish",
+            "amenity": "Aeropuerto",
+            "popupContent": "",
+            "geometry": {
+              "coordinates": [
+                35.7724032,
+                140.3826882
+              ]
+            }
+          },
+          {
+            "type": "item",
+            "name": "Monte Fuji",
+            "blah": "hanami",
+            "amenity": "Monte",
+            "popupContent": "https://es.wikipedia.org/wiki/Monte_Fuji",
+            "geometry": {
+              "coordinates": [
+                35.3625,
+                138.730556
+              ]
+            },
+            "id": "japantokyo003"
+          },
+          {
+            "type": "item",
+            "name": "Disney",
+            "blah": "wish",
+            "amenity": "Parque de Diversiones",
+            "popupContent": "https://es.wikipedia.org/wiki/Tokyo_Disneyland",
+            "geometry": {
+              "coordinates": [
+                35.632778,
+                139.880556
+              ]
+            },
+            "id": "japantokyo004"
+          },
+          {
+            "type": "item",
+            "name": "Tokyo Tower",
+            "blah": "wish",
+            "amenity": "Atraccion Turistica",
+            "popupContent": "http://www.tokyotower.co.jp/eng/",
+            "geometry": {
+              "coordinates": [
+                35.658611,
+                139.745556
+              ]
+            },
+            "id": "japantokyo005"
+          }
+        ]]
+      }
+    ]
+  }
+}

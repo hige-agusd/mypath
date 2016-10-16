@@ -1,0 +1,975 @@
+{
+  "Places": {
+    "Japan": {
+      "Tokyo": [
+        {
+          "id": "japantokyo000",
+          "type": "Feature",
+          "properties": {
+            "name": "EDO-TOKYO OPEN AIR ARCHITECTURAL MUSEUM",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.7122107,
+              139.509618
+            ]
+          }
+        },
+        {
+          "id": "japantokyo001",
+          "type": "Feature",
+          "properties": {
+            "name": "Hard Rock Cafe",
+            "type": "wish",
+            "amenity": "Cafe",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.7103487,
+              139.7747607
+            ]
+          }
+        },
+        {
+          "id": "japantokyo002",
+          "type": "Feature",
+          "properties": {
+            "name": "Narita (NRT)",
+            "type": "wish",
+            "amenity": "Aeropuerto",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.7724032,
+              140.3826882
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Monte Fuji",
+            "type": "hanami",
+            "amenity": "Monte",
+            "popupContent": "https://es.wikipedia.org/wiki/Monte_Fuji"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.3625,
+              138.730556
+            ]
+          },
+          "id": "japantokyo003"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Disney",
+            "type": "wish",
+            "amenity": "Parque de Diversiones",
+            "popupContent": "https://es.wikipedia.org/wiki/Tokyo_Disneyland"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.632778,
+              139.880556
+            ]
+          },
+          "id": "japantokyo004"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Tokyo Tower",
+            "type": "wish",
+            "amenity": "Atraccion Turistica",
+            "popupContent": "http://www.tokyotower.co.jp/eng/"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.658611,
+              139.745556
+            ]
+          },
+          "id": "japantokyo005"
+        }
+      ],
+      "Kyoto": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Kyoto Imperial Palace",
+            "type": "wish",
+            "amenity": "Palacio",
+            "popupContent": "http://sankan.kunaicho.go.jp/english/guide/kyoto.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.025278,
+              135.762222
+            ]
+          },
+          "id": "japankyoto000"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Ponto-cho",
+            "type": "wish",
+            "amenity": "Lugares Tipicos",
+            "popupContent": "http://sobre-japon.com/2013/01/08/el-barrio-de-ponto-cho-en-kyoto/"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.007969,
+              135.771111
+            ]
+          },
+          "id": "japankyoto001"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Kennin-ji",
+            "type": "wish",
+            "amenity": "Templo",
+            "popupContent": "http://sobre-japon.com/2012/01/09/kennin-ji-el-templo-budista-zen-mas-antiguo-de-kioto/"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.001111,
+              135.773611
+            ]
+          },
+          "id": "japankyoto002"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Nanzen-ji",
+            "type": "wish",
+            "amenity": "Templo",
+            "popupContent": "http://sobre-japon.com/2012/02/29/nanzen-ji-templos-y-acueducto-en-kioto/"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.011111,
+              135.794167
+            ]
+          },
+          "id": "japankyoto003"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Ninna-ji",
+            "type": "wish",
+            "amenity": "Templo",
+            "popupContent": "http://www.descubra.info/turismo-en-kyoto-un-destino-de-vasta-tradicion/"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.031,
+              135.7138
+            ]
+          },
+          "id": "japankyoto004"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Arashiyama",
+            "type": "wish",
+            "amenity": "Paisaje",
+            "popupContent": "http://www.descubra.info/turismo-en-kyoto-un-destino-de-vasta-tradicion/"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.015096,
+              135.670667
+            ]
+          },
+          "id": "japankyoto005"
+        }
+      ],
+      "Yokohama": [
+        {
+          "id": "japanyokohama000",
+          "type": "Feature",
+          "properties": {
+            "name": "Shin Yokohama Raumen Museum",
+            "type": "wish",
+            "amenity": "Ramen",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.5096072,
+              139.6143374
+            ]
+          }
+        }
+      ],
+      "Ise": [
+        {
+          "id": "japanise000",
+          "type": "Feature",
+          "properties": {
+            "name": "Santuario de Ise",
+            "type": "wish",
+            "amenity": "Santuario",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.45501,
+              136.725793
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Oharai-machi",
+            "type": "wish",
+            "amenity": "Lugares Tipicos",
+            "popupContent": "https://en.wikipedia.org/wiki/Ise,_Mie"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.462881,
+              136.723342
+            ]
+          },
+          "id": "japanise001"
+        }
+      ],
+      "Nagiso": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Tsumago-juku",
+            "type": "wish",
+            "amenity": "Lugares Tipicos",
+            "popupContent": "https://en.wikipedia.org/wiki/Tsumago-juku"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.5753,
+              137.5951
+            ]
+          },
+          "id": "japannagiso000"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Kotoku-ji Temple",
+            "type": "wish",
+            "amenity": "Templo",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.5757399,
+              137.5954025
+            ]
+          },
+          "id": "japannagiso001"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Nagiso-machi Museum",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.5777206,
+              137.5954913
+            ]
+          },
+          "id": "japannagiso002"
+        }
+      ],
+      "Shirakawa": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Shirakawa-go, Shirakawa Village, Gifu Prefecture",
+            "type": "wish",
+            "amenity": "Lugares Tipicos",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              36.256158,
+              136.9057457
+            ]
+          },
+          "id": "japanshirakawa000"
+        }
+      ],
+      "Kurashiki": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Ohara Museum of Art",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "https://en.wikipedia.org/wiki/Ohara_Museum_of_Art"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.5964067,
+              133.7707941
+            ]
+          },
+          "id": "japankurashiki000"
+        }
+      ],
+      "Himeji": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Himeji-jo",
+            "type": "wish",
+            "amenity": "Castillo",
+            "popupContent": "https://es.wikipedia.org/wiki/Castillo_Himeji"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.839444,
+              134.693889
+            ]
+          },
+          "id": "japanhimeji000"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Himeji Shrine",
+            "type": "wish",
+            "amenity": "Santuario",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.8397117,
+              134.6959083
+            ]
+          },
+          "id": "japanhimeji001"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "koko-en",
+            "type": "wish",
+            "amenity": "Jardin",
+            "popupContent": "https://en.wikipedia.org/wiki/Koko-en_Garden"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.83797,
+              134.68952
+            ]
+          },
+          "id": "japanhimeji002"
+        }
+      ],
+      "Inuyama": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Meiji-mura Museum",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "http://www.meijimura.com/english/info/index.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.340601,
+              136.988732
+            ]
+          },
+          "id": "japaninuyama000"
+        }
+      ],
+      "Osaka": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Kansai",
+            "type": "wish",
+            "amenity": "Aeropuerto",
+            "popupContent": ""
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.434167,
+              135.232778
+            ]
+          },
+          "id": "japanosaka000"
+        }
+      ],
+      "Sapporo": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Kaitaku-no Mura",
+            "type": "wish",
+            "amenity": "Lugar Historico",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298560-d319631-Reviews-Historical_Village_of_Hokkaido_Kaitaku_no_Mura-Sapporo_Hokkaido.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              43.048171,
+              141.4973197
+            ]
+          },
+          "id": "japansapporo000"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Sapporo Biru Hakubutsukan",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298560-d319633-Reviews-Sapporo_Beer_Museum-Sapporo_Hokkaido.html#mtreview_review_291920884"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              43.071524,
+              141.368889
+            ]
+          },
+          "id": "japansapporo001"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Nakajima Koen",
+            "type": "wish",
+            "amenity": "Parque",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298560-d1384178-Reviews-Nakajima_Park-Sapporo_Hokkaido.html#mtreview_295172474"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              43.0460724,
+              141.35248
+            ]
+          },
+          "id": "japansapporo002"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Nijo Market",
+            "type": "wish",
+            "amenity": "Mercado Tipico",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298560-d1384185-Reviews-Nijo_Market-Sapporo_Hokkaido.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              43.0585881,
+              141.3581763
+            ]
+          },
+          "id": "japansapporo003"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Kirin Beer Garden",
+            "type": "wish",
+            "amenity": "Comida",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298560-d1412187-Reviews-Kirin_Beer_Garden_Hokkaido_Main_Bdg_Nakashima_Park_branch-Sapporo_Hokkaido.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              43.048611111111114,
+              141.35722222222222
+            ]
+          },
+          "id": "japansapporo004"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Norbesa",
+            "type": "wish",
+            "amenity": "Noria",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298560-d1953244-Reviews-Noria-Sapporo_Hokkaido.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              43.0560877,
+              141.3509777
+            ]
+          },
+          "id": "japansapporo005"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Chitotetsuru Sake Museum",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298560-d1232945-Reviews-Chitosetsuru_Sake_Museum-Sapporo_Hokkaido.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              43.0587731,
+              141.3638385
+            ]
+          },
+          "id": "japansapporo006"
+        }
+      ],
+      "Shibuya": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Santuario Meiji",
+            "type": "wish",
+            "amenity": "Santuario",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g1066456-d1373780-Reviews-Meiji_Jingu-Shibuya_Tokyo_Tokyo_Prefecture_Kanto.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              35.6764048,
+              139.6992894
+            ]
+          },
+          "id": "japanshibuya000"
+        }
+      ],
+      "Nara": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Todaiji",
+            "type": "wish",
+            "amenity": "Templo",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298198-d319876-Reviews-Todaiji_Temple-Nara_Nara_Prefecture_Kinki.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.689167,
+              135.839722
+            ]
+          },
+          "id": "japannara000"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Nara koen",
+            "type": "wish",
+            "amenity": "Parque",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298198-d319880-Reviews-Nara_Park-Nara_Nara_Prefecture_Kinki.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.6850581,
+              135.8426268
+            ]
+          },
+          "id": "japannara001"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Yoshinoyama",
+            "type": "hanami",
+            "amenity": "Paisaje",
+            "popupContent": "http://www.yoshinoyama-sakura.jp/english/index.htm"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.360294,
+              135.866934
+            ]
+          },
+          "id": "japannara002"
+        }
+      ],
+      "Hiroshima": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Hiroshima National Peace Memorial Hall for the Atomic Bomb Victims",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298561-d3153657-Reviews-Hiroshima_National_Peace_Memorial_Hall_for_the_Atomic_Bomb_Victims-Hiroshima_Hiro.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.39333,
+              132.45349
+            ]
+          },
+          "id": "japanhiroshima000"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Museo Conmemorativo de la Paz de Hiroshima",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298561-d320360-Reviews-Hiroshima_Peace_Memorial_Museum-Hiroshima_Hiroshima_Prefecture_Chugoku.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.395472,
+              132.453528
+            ]
+          },
+          "id": "japanhiroshima001"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Hiroshima-jo",
+            "type": "wish",
+            "amenity": "Castillo",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298561-d320344-Reviews-Hiroshima_Castle-Hiroshima_Hiroshima_Prefecture_Chugoku.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.402726,
+              132.459047
+            ]
+          },
+          "id": "japanhiroshima002"
+        }
+      ],
+      "Hatsukaichi": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Itsukushima-jinja",
+            "type": "wish",
+            "amenity": "Santuario",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g1022438-d320235-Reviews-Itsukushima_Shrine-Hatsukaichi_Hiroshima_Prefecture_Chugoku.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              34.295833,
+              132.319722
+            ]
+          },
+          "id": "japanhatsukaichi000"
+        }
+      ],
+      "Nagasaki": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Nagasaki National Peace Memorial Hall for the Atomic Bomb Victims",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "https://en.wikipedia.org/wiki/Nagasaki_National_Peace_Memorial_Hall_for_the_Atomic_Bomb_Victims"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              32.772778,
+              129.865
+            ]
+          },
+          "id": "japannagasaki000"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "The Kameyama Shachu Memorial Museum",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "https://www.nhk.or.jp/nagasaki/ryomaden/en/place/map_place06.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              32.748811,
+              129.886771
+            ]
+          },
+          "id": "japannagasaki001"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Former Glover Residence",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298568-d1384776-Reviews-Former_Glover_Residence-Nagasaki_Nagasaki_Prefecture_Kyushu_Okinawa.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              32.734089,
+              129.86899
+            ]
+          },
+          "id": "japannagasaki002"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Kazagashira koen",
+            "type": "wish",
+            "amenity": "Parque",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298568-d1551072-Reviews-Kazagashira_Park-Nagasaki_Nagasaki_Prefecture_Kyushu_Okinawa.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              32.746126,
+              129.886011
+            ]
+          },
+          "id": "japannagasaki003"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Nagasaki Electric Tramway Corporation",
+            "type": "wish",
+            "amenity": "Lugar de interes",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298568-d7930529-Reviews-Nagasaki_Electric_Tramway_Corporation-Nagasaki_Nagasaki_Prefecture_Kyushu_Okinawa.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              32.780114,
+              129.861312
+            ]
+          },
+          "id": "japannagasaki004"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Nagasaki Museum of History and Culture",
+            "type": "wish",
+            "amenity": "Museo",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g298568-d1403971-Reviews-Nagasaki_Museum_of_History_and_Culture-Nagasaki_Nagasaki_Prefecture_Kyushu_Okinaw.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              32.752706,
+              129.879461
+            ]
+          },
+          "id": "japannagasaki005"
+        }
+      ],
+      "Shibata": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Funaokajoshi koen",
+            "type": "hanami",
+            "amenity": "Castillo, Parque",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g1120938-d1386304-Reviews-Funaoka_Castle_Ruins-Shibata_machi_Shibata_gun_Miyagi_Prefecture_Tohoku.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              38.055714,
+              140.757796
+            ]
+          },
+          "id": "japanshibata000"
+        }
+      ],
+      "Ogawara": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Shiroishigawa",
+            "type": "hanami",
+            "amenity": "Paisaje",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g1120936-d1761176-Reviews-Shiroishigawa_Tsuzumihitome_Senbon_Cherry_Blossom-Ogawara_machi_Shibata_gun_Miya.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              38.054648,
+              140.739227
+            ]
+          },
+          "id": "japanogawara000"
+        }
+      ],
+      "Yuzawa": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Kagura ski",
+            "type": "hanami",
+            "amenity": "Ski",
+            "popupContent": "http://www.tripadvisor.com.ar/Attraction_Review-g1119245-d1424936-Reviews-Kagura_Ski_Resort-Yuzawa_machi_Minamiuonuma_gun_Niigata_Prefecture_Chubu.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              36.893137,
+              138.775297
+            ]
+          },
+          "id": "japanyuzawa000"
+        }
+      ],
+      "Hirosaki": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Hirosaki jo",
+            "type": "hanami",
+            "amenity": "Castillo",
+            "popupContent": "http://www.city.hirosaki.aomori.jp/index.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              40.607532,
+              140.464042
+            ]
+          },
+          "id": "japanhirosaki000"
+        }
+      ],
+      "Nagatoro": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": "Tourinuke no sakura",
+            "type": "hanami",
+            "amenity": "Paisaje",
+            "popupContent": "http://www.nagatoro.gr.jp/en/sights/index.html"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              36.095059,
+              139.11212
+            ]
+          },
+          "id": "japannagatoro000"
+        }
+      ]
+    },
+    "UK": {
+      "London": [
+        {
+          "id": "uklondon000",
+          "type": "Feature",
+          "properties": {
+            "name": "Coors Field",
+            "type": "video",
+            "amenity": "Baseball Stadium",
+            "popupContent": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/AZLNvkex2sI\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              51.505,
+              -0.09
+            ]
+          }
+        },
+        {
+          "id": "uklondon001",
+          "type": "Feature",
+          "properties": {
+            "name": "Coors Field",
+            "type": "video",
+            "amenity": "Baseball Stadium",
+            "popupContent": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/60w9ihXGW3g\" frameborder=\"0\" allowfullscreen></iframe>"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              51.505,
+              -0.09
+            ]
+          }
+        }
+      ]
+    },
+    "Argentina": {
+      "Miramar": [
+        {
+          "id": "argentinamiramar000",
+          "type": "Feature",
+          "properties": {
+            "name": "Surfcamp",
+            "type": "photo",
+            "amenity": "Playa",
+            "popupContent": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10985326_10206651794916134_5464897661788252729_n.jpg?oh=1d5b1fc92549cc11dfd921ee86ea13c8&oe=56421CF6&__gda__=1444216969_701a76e0c824d2265afab257e16f8bd8"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -38.245859,
+              -57.777762
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "Lines": []
+}
